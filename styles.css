@@ -73,3 +73,33 @@ form {
     flex-direction: column;
     align-items: flex-start;
 }
+
+#leftSide {
+    width: 30%;
+    background-image: url('assets/fern-background.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+#rightSide {
+    width: 70%;
+
+}
+
+#logoCon {
+    margin-top: 175px;
+    background-color: black;
+    opacity: .3;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logoCon img {
+    height: 95%;
+    
+}
