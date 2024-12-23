@@ -22,33 +22,33 @@
             Sign up <span>now</span> to get started.<br><br>
             You <span>know</span> you want to.</p></div>
             <div id="accountForm">
-                <form action="formDump.txt">
+                <form action="formDump.txt" novalidate>
                     <legend>Let's do this!</legend>
                     <div id="sectOne">
                         <fieldset id="f1">
                             <label for="first_name">FIRST NAME<br>
-                                <input type="text" id="first_name">
+                                <input type="text" id="first_name" required>
                                 <span aria-live="polite"></span>
                             </label>
                             <label for="email">EMAIL<br>
-                                <input type="email" id="email">
+                                <input type="email" id="email" required>
                                 <span aria-live="polite"></span>
                             </label>
                             <label for="password">PASSWORD<br>
-                                <input type="password" id="password">
+                                <input type="password" id="password" minlength="8" required>
                             </label>
                         </fieldset>
                         <fieldset id="f2">
                             <label for="last_name">LAST NAME<br>
-                                <input type="text" id="last_name">
+                                <input type="text" id="last_name" required>
                                 <span aria-live="polite"></span>
                             </label>
                             <label for="phone">PHONE NUMBER<br>
-                                <input type="tel" id="phone">
+                                <input type="tel" id="phone" minlength="10" required>
                                 <span aria-live="polite"></span>
                             </label>
                             <label for="confPass">CONFIRM PASSWORD<br>
-                                <input type="password" id="confPass">
+                                <input type="password" id="confPass" minlength="8" required>
                                 <span aria-live="polite"></span>
                             </label>
                         </fieldset>
