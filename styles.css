@@ -1,0 +1,75 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+}
+
+#pageContainer, #leftSide, 
+#rightSide, #topText,
+#accountForm, #sectOne {
+    border: 1px solid black;
+}
+
+#pageContainer{
+    display: flex;
+    height: 100%;
+    width: 100%;
+
+}
+
+#leftSide, #rightSide {
+    display: flex;
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+}
+
+#topText{
+    width: 100%;
+    height: 29%;
+}
+
+#accountForm {
+    /* position: relative; */
+    width: 100%;
+    height: 71%;
+    flex-direction: column;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+}
+#sectOne {
+    /* position: absolute;
+    top: 0; */
+    flex-shrink: 0;
+    height: 41%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#f1, #f2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+
+
+#sectTwo {
+    border: 1px solid black;
+    height: calc(100% - 43%); /* Ensures remaining height is used */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
