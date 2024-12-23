@@ -1,18 +1,27 @@
+@font-face {
+    font-family: "Norse-Bold";
+    src: url('assets/Norse-Bold.otf');
+}
+
 
 * {
     box-sizing: border-box;
 }
 
 
-html, body {
+body {
     height: 100vh;
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 #pageContainer, #leftSide, 
 #rightSide, #topText,
 #accountForm, #sectOne {
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #pageContainer{
@@ -25,13 +34,13 @@ html, body {
 #leftSide, #rightSide {
     display: flex;
     height: 100%;
-    width: 50%;
     flex-direction: column;
 }
 
 #topText{
     width: 100%;
     height: 29%;
+    background-color: whitesmoke;
 }
 
 #accountForm {
@@ -39,6 +48,7 @@ html, body {
     width: 100%;
     height: 71%;
     flex-direction: column;
+    background-color: whitesmoke
 }
 
 form {
@@ -46,36 +56,54 @@ form {
     height: 100%;
 }
 #sectOne {
-    /* position: absolute;
-    top: 0; */
-    flex-shrink: 0;
     height: 41%;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    background-color: white;
+    box-shadow: 6px 11px 10px rgb(209, 209, 209);
+    margin-bottom: 20px;
 }
 
 #f1, #f2 {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    /* width: 50%; */
     justify-content: space-evenly;
-    align-items: stretch;
+    /* align-items: stretch; */
+    margin-left: 0;
+    border: none;
+
+}
+
+#f1 {
+    width: 35%;
+    margin-right: 0;
+
+}
+
+#f2 {
+    width: 65%;
 }
 
 
 
 #sectTwo {
-    border: 1px solid black;
-    height: calc(100% - 43%); /* Ensures remaining height is used */
+    /* border: 1px solid black; */
+    height: 57%; /* Ensures remaining height is used */
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    border: none;
+    margin-left: 35px;
+    margin-top: 35px;
+    background-color: whitesmoke;
+
 }
 
 #leftSide {
-    width: 30%;
+    width: 40%;
     background-image: url('assets/fern-background.avif');
     background-size: cover;
     background-repeat: no-repeat;
@@ -84,14 +112,13 @@ form {
 }
 
 #rightSide {
-    width: 70%;
+    width: 60%;
 
 }
 
 #logoCon {
     margin-top: 175px;
-    background-color: black;
-    opacity: .3;
+    background-color: rgba(0,0,0,.5);
     width: 100%;
     height: 150px;
     display: flex;
@@ -99,7 +126,76 @@ form {
     align-items: center;
 }
 
-#logoCon img {
+#odin {
     height: 95%;
+    filter: saturate(1.75);
+    opacity: 1;
     
+}
+
+#odinLabel {
+    font-family: 'Norse-Bold';
+    font-size: 5rem;
+    color: #eee;
+}
+
+input {
+    outline: none;
+    border-radius: 5px;
+    height: 2rem;
+    width: 16rem;
+    /* border-color: #ffffff; */
+    border: 1px solid #ccc;
+}
+
+legend {
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 0px;
+    background-color: white;
+    box-shadow: 6px 14px 10px rgb(209, 209, 209);
+
+
+}
+
+button {
+    height: 3rem;
+    width: 15rem;
+    border-radius: 8px;
+    margin-left: 0;
+    background-color: #596D48;
+    color: rgb(255, 255, 255, 1);
+    font-size: 1.2rem;
+    filter: saturate(1.5);
+}
+
+#sectTwo p {
+    font-size: 1.2rem;
+}
+
+span {
+    font-weight: bold;
+}
+
+
+
+input:focus {
+    outline: none;
+    border-color: #7253e2;
+    box-shadow: 2px 2px 2px rgba(209, 209, 209, 1);
+}
+
+input:invalid {
+    outline: none;
+    border-color: #7253e2;
+    box-shadow: 2px 2px 2px rgba(209, 209, 209, 1);
+}
+
+label {
+    font-family: Arial, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: .9rem;
+}
+
+button:hover {
+    cursor: pointer;
 }
