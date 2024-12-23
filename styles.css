@@ -40,18 +40,20 @@ body {
 
 #topText{
     width: 100%;
-    height: calc(1rem + 32%);
+    height: calc(1rem + 34%);
     background-color: whitesmoke;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-weight: bold;
+    font-size: 28px;
+    padding-left: 44px;
 }
 
 #accountForm {
     /* position: relative; */
     width: 100%;
-    height: calc(1rem + 67%);
+    height: calc(1rem + 65%);
     flex-direction: column;
     background-color: whitesmoke
 }
@@ -68,6 +70,7 @@ form {
     background-color: white;
     box-shadow: 6px 11px 10px rgb(209, 209, 209);
     margin-bottom: 20px;
+    padding-left: 35px;
 }
 
 #f1, #f2 {
@@ -101,9 +104,10 @@ form {
     flex-direction: column;
     align-items: flex-start;
     border: none;
-    margin-left: 35px;
-    margin-top: 35px;
+    margin-left: 45px;
+    margin-top: 40px;
     background-color: whitesmoke;
+
 
 }
 
@@ -114,6 +118,12 @@ form {
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#foot {
+    color: rgb(255, 255, 255, .7);
 }
 
 #rightSide {
@@ -122,7 +132,7 @@ form {
 }
 
 #logoCon {
-    margin-top: 175px;
+    margin-top: 185px;
     background-color: rgba(0,0,0,.5);
     width: 100%;
     height: 150px;
@@ -159,7 +169,7 @@ legend {
     background-color: white;
     box-shadow: 6px 14px 10px rgb(209, 209, 209);
     padding-top: 10px;
-    padding-left: 12px;
+    padding-left: 46px;
     font-family: Verdana, Helvetica, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 
@@ -181,7 +191,7 @@ button {
     font-size: 1.2rem;
 }
 
-span {
+#sectTwo span {
     font-weight: bold;
 }
 
@@ -200,10 +210,24 @@ input:invalid {
 }
 
 label {
-    font-family: Arial, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: .9rem;
+    font-family: Tahoma, Arial, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: .8rem;
+    font-weight: 600;
 }
 
 button:hover {
+    cursor: pointer;
+}
+
+#sectOne label {
+    color: rgb(0, 0, 0, .65);
+
+}
+
+#topText span {
+    font-style: italic;
+}
+
+#sectTwo span:hover {
     cursor: pointer;
 }
