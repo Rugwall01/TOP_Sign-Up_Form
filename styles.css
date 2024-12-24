@@ -149,7 +149,7 @@ form {
 
 #odinLabel {
     font-family: 'Norse-Bold';
-    font-size: 5rem;
+    font-size: 5.5rem;
     color: #eee;
 }
 
@@ -233,4 +233,13 @@ button:hover {
 
 #sectTwo span:hover {
     cursor: pointer;
+}
+
+#foot a {
+    text-decoration: underline;
+}
+
+#foot a:visited {
+    color: rgb(255, 255, 255, .7);
+
 }
